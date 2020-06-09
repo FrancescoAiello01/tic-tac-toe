@@ -8,4 +8,8 @@ class Game
         @board = board
     end
 
+    def over?
+    
+    end
+
 end
