@@ -9,7 +9,15 @@ class Game
     end
 
     def over?
-    
+        if board == nil then
+            return false
+        elsif board.full? then
+            return true
+        elsif board.token_at(0, 0) && board.token_at(1, 1) then
+            return false
+        else 
+            return false
+        end
     end
 
 end
