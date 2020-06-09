@@ -49,20 +49,24 @@ describe 'A game of tic tac toe' do
   end
 
   it 'is not initially over' do
+    skip
     game = Game.new
     expect(game).to_not be_over
   end
 
   it 'is not over if the board is not full' do
+    skip
     game = Game.new(midgame_board)
     expect(game).to_not be_over
   end
 
   it 'is over when the board is full' do
+    skip
     expect(Game.new(full_board)).to be_over
   end
 
   it 'is a tie if there is no winner and the board is full' do
+    skip
     game = Game.new(full_board)
     expect(game).to be_tie
   end
@@ -70,16 +74,19 @@ describe 'A game of tic tac toe' do
   describe 'winning' do
 
     it 'reports :x is the winner when a row is full of :x' do
+      skip
       game = Game.new(x_wins_board)
       expect(game.winner).to eq(:x)
     end
 
     it 'reports :o is the winner when a row is full of :o' do
+      skip
       game = Game.new(o_wins_board)
       expect(game.winner).to eq(:o)
     end
 
     it 'reports nil if there is no winner' do
+      skip
       game = Game.new
       expect(game.winner).to be_nil
     end
