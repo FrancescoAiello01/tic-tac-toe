@@ -20,4 +20,10 @@ class Game
         end
     end
 
+    def tie?
+        if board.full? then
+            return true
+        end
+    end
+
 end
