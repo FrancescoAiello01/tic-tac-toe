@@ -26,4 +26,13 @@ class Game
         end
     end
 
+    def winner
+        if board.token_at(:top, :left) == :x then
+            return :x
+        else
+            return :o
+        end
+
+    end
+
 end
