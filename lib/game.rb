@@ -27,7 +27,9 @@ class Game
     end
 
     def winner
-        if board.token_at(:top, :left) == :x then
+        if board == nil then
+            return nil
+        elsif board.token_at(:top, :left) == :x then
             return :x
         else
             return :o
